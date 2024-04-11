@@ -1,0 +1,7 @@
+streamlit
+numpy
+matplotlib
+scikit-learn==1.4.1.post1
+joblib
+scikit-image
+streamlit-drawable-canvas
