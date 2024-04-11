@@ -50,6 +50,7 @@ def main():
 
         st.write(f"El número dibujado es: {prediccion}")
     st.write("[Google Colab](https://colab.research.google.com/drive/1d1oA-MWKVVYRvwpmDtNLdrts88__9mzE?usp=sharing).")
+    st.write("[Github](https://github.com/DavidDIaz0504/T-IA).")
 
 if __name__ == "__main__":
     main()
