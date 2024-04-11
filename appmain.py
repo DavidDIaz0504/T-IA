@@ -9,6 +9,12 @@ from skimage.transform import resize
 # Cargar el modelo entrenado
 digitosM = jb.load("ModelDigitos.bin")
 
+st.set_page_config(
+    page_title="Dibuja nuemros",
+    page_icon=":smailey:",
+    layout="wide"
+)
+
 # Función para predecir el número dibujado
 def predecir_numero(imagen):
     imagen_aplanada = imagen.reshape(1, -1)
@@ -43,6 +49,7 @@ def main():
         prediccion = predecir_numero(imagen_reescalada)
 
         st.write(f"El número dibujado es: {prediccion}")
+    st.write("[Google Colab](https://colab.research.google.com/drive/1d1oA-MWKVVYRvwpmDtNLdrts88__9mzE?usp=sharing).")
 
 if __name__ == "__main__":
     main()
